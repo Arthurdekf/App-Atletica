@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F1F1F1"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".HomeActivity">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -31,7 +31,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tabMural"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0077E6"
@@ -42,18 +42,16 @@
         app:tabTextColor="#DDDDDD">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem1"
+            android:id="@+id/tabGeral"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="GERAL"
-            app:layout_constraintWeight="1" />
+            android:text="GERAL" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem2"
+            android:id="@+id/tabNoticias"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="NOTÍCIAS"
-            app:layout_constraintWeight="1" />
+            android:text="NOTÍCIAS" />
     </com.google.android.material.tabs.TabLayout>
 
     <FrameLayout
@@ -61,7 +59,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/fabCriar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -72,7 +70,8 @@
             app:fabSize="normal"
             app:pressedTranslationZ="12dp"
             app:srcCompat="@drawable/baseline_create_24"
-            app:tint="@color/blue"/>
+            app:tint="@color/blue"
+            android:contentDescription="Botão de criação de conteúdo"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"

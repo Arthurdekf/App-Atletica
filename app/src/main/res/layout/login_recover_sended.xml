@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SentRecoverActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,12 +84,13 @@
                     android:layout_height="20dp" />
 
                 <TextView
-                    android:id="@+id/btnresendmail"
+                    android:id="@+id/btnResendemail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:text="REENVIAR E-MAIL"
+                    android:onClick="Reenviar"
                     android:textColor="@color/blue"
                     android:textSize="18dp" />
 
@@ -107,7 +108,7 @@
             android:elevation="100dp">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnVoltar"
                 android:layout_width="218dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
