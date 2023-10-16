@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RecoverActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
             android:elevation="100dp">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnEnviar"
                 android:layout_width="218dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
