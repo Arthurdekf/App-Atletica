@@ -24,22 +24,21 @@
             android:layout_width="320dp"
             android:layout_height="430dp"
             android:layout_centerInParent="true"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="10dp"
             android:elevation="2dp"
-            >
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="430dp"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="109dp"
-                    android:layout_height="90dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/img" />
+                    android:src="@drawable/baseline_account_circle_24" />
 
                 <TextView
                     android:layout_width="180dp"
@@ -58,8 +57,8 @@
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:hint="Email" />
+                    android:hint="Email"
+                    android:maxLines="1" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -70,8 +69,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Senha"
-                    android:maxLines="1"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="25dp" />
@@ -81,11 +81,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
                     android:text="NÃO POSSUI CONTA?"
                     android:textColor="@color/blue"
                     android:textSize="20dp"
-                    />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -102,8 +101,8 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="125dp"
-                android:elevation="100dp"
                 android:backgroundTint="@color/blue"
+                android:elevation="100dp"
                 android:text="Login"
                 android:textSize="25dp" />
 
@@ -112,8 +111,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text="ESQUECI MINHA SENHA"
                 android:layout_marginBottom="70dp"
+                android:text="ESQUECI MINHA SENHA"
                 android:textColor="#555555"
                 android:textSize="20dp" />
         </FrameLayout>
