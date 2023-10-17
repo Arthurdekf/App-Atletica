@@ -4,6 +4,14 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import com.example.appatletica.CardAdapter;
+import com.example.appatletica.model.CardItem;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -13,7 +21,17 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerView); // R.id.recyclerView deve corresponder ao ID no seu arquivo activity_home.xml
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        List<CardItem> itemList = createCardItemList();
+
+
+        CardAdapter cardAdapter = new CardAdapter(itemList);
+        recyclerView.setAdapter(cardAdapter);
+
         String userType = getIntent().getStringExtra("userType");
+
 
         if (userType != null) {
             String userTypeText = userType.equals("membro") ? "membro" : "administrador";
@@ -21,6 +39,17 @@ public class HomeActivity extends AppCompatActivity {
         } else {
             Log.d("HomeActivity", "Tipo de usuário desconhecido");
         }
+
+
+    }
+
+    private List<CardItem> createCardItemList() {
+        List<CardItem> itemList = new ArrayList<>();
+
+        itemList.add(new CardItem("Arthur", "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado"));
+        itemList.add(new CardItem("Unaerp", "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado"));
+        itemList.add(new CardItem("João", "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado"));
+        return itemList;
     }
 
 }
