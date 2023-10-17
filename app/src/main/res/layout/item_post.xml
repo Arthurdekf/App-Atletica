@@ -28,14 +28,16 @@
             android:text="Arthur"
             android:layout_marginTop="5dp"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/content"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:text="A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto "
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black3"/>
 
     </LinearLayout>
 

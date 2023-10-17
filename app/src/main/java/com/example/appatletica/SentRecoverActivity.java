@@ -24,9 +24,4 @@ public class SentRecoverActivity extends AppCompatActivity {
             }
         });
     }
-
-    public void Reenviar(View view){
-        Intent intent = new Intent(this, RecoverActivity.class);
-        startActivity(intent);
-    }
 }

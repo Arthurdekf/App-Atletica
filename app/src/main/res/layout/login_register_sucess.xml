@@ -68,10 +68,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Conta Registrada!"
+                    android:text="Conta Registrada com sucesso!"
                     android:textColor="#313131"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -86,11 +85,12 @@
                 android:layout_width="218dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginBottom="150dp"
+                android:layout_marginBottom="190dp"
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Voltar"
-                android:textSize="25dp" />
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
 
         </FrameLayout>
 

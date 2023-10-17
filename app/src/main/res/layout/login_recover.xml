@@ -22,7 +22,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/centeredWhiteView"
             android:layout_width="320dp"
-            android:layout_height="350dp"
+            android:layout_height="400dp"
             android:layout_centerInParent="true"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="10dp"
@@ -30,9 +30,16 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="382dp"
+                android:layout_height="400dp"
                 android:orientation="vertical"
                 android:padding="16dp">
+
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/baseline_arrow_back_ios_24" />
+
 
                 <ImageView
                     android:layout_width="80dp"
@@ -51,7 +58,20 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Insira seu E-mail para que seja enviado uma mensagem de recuperaçâo."
+                    android:textColor="@color/black3"
+                    android:textSize="18dp"
+                    android:textAlignment="center"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
 
                 <EditText
                     android:id="@+id/emailEditText"
@@ -77,11 +97,12 @@
                 android:layout_width="218dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginBottom="165dp"
+                android:layout_marginBottom="185dp"
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Enviar"
-                android:textSize="25dp" />
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
 
         </FrameLayout>
 
