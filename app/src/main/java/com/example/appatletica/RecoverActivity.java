@@ -40,4 +40,9 @@ public class RecoverActivity extends AppCompatActivity {
         Pattern pattern = Pattern.compile(padraoEmail);
         return pattern.matcher(email).matches();
     }
+
+    public void btnVoltar (View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }
