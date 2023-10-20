@@ -38,8 +38,8 @@
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:backgroundTint="@color/white"
-                    android:src="@drawable/baseline_arrow_back_ios_24"
-                    android:onClick="btnVoltar" />
+                    android:onClick="btnVoltar"
+                    android:src="@drawable/baseline_arrow_back_ios_24" />
 
 
                 <ImageView
@@ -66,9 +66,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Insira seu E-mail para que seja enviado uma mensagem de recuperaçâo."
+                    android:textAlignment="center"
                     android:textColor="@color/black3"
-                    android:textSize="18dp"
-                    android:textAlignment="center"/>
+                    android:textSize="18dp" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -102,8 +102,8 @@
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Enviar"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
         </FrameLayout>
 

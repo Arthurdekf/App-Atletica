@@ -1,23 +1,23 @@
-package userDAO;
+package com.example.appatletica.dao;
 
 import com.example.appatletica.model.administrator;
 import com.example.appatletica.model.member;
-import com.example.appatletica.model.user;
+import com.example.appatletica.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class user_dao_impl implements user_dao {
-    private List<user> userList;
+public class userDAO_impl implements UserDAO {
+    private List<User> userList;
 
-    public user_dao_impl() {
+    public userDAO_impl() {
         userList = new ArrayList<>();
-        userList.add(new member("joao@gmail.com", "teste123"));
-        userList.add(new administrator("arthur@gmail.com", "admin123"));
+        userList.add(new member("1", "joao@gmail.com", "teste123", "João", "Engenharia", false));
+        userList.add(new administrator("1", "arthur@gmail.com", "admin123"));
     }
 
     @Override
     public boolean autenticarUsuario(String email, String senha) {
-        for (user user : userList) {
+        for (User user : userList) {
             if (user.getEmail().equals(email) && user.getSenha().equals(senha)) {
                 if (user instanceof member) {
                     return true;
@@ -30,7 +30,7 @@ public class user_dao_impl implements user_dao {
     }
 
     @Override
-    public List<user> getUsers() {
+    public List<User> getUsers() {
         return userList;
     }
 }

@@ -89,8 +89,8 @@
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Voltar"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
         </FrameLayout>
 

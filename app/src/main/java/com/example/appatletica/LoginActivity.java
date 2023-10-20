@@ -10,8 +10,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import controller.login_controller;
-import userDAO.user_dao;
-import userDAO.user_dao_impl;
+import com.example.appatletica.dao.UserDAO;
+import com.example.appatletica.dao.userDAO_impl;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText emailEditText;
@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         senhaEditText = findViewById(R.id.senhaEditText);
         btnLogin = findViewById(R.id.btnLogin);
 
-        user_dao userDAO = new user_dao_impl();
+        UserDAO userDAO = new userDAO_impl();
         loginController = new login_controller(userDAO);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -38,13 +38,13 @@ public class LoginActivity extends AppCompatActivity {
                 String senha = senhaEditText.getText().toString();
                 String userType = loginController.getUserType(email, senha);
 
-               // if (userType != null) {
+               if (userType != null) {
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-               //     intent.putExtra("userType", userType);
+                   intent.putExtra("userType", userType);
                     startActivity(intent);
-               // } else {
-               //     Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
-               // }
+                } else {
+                   Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
+               }
             }
         });
     }

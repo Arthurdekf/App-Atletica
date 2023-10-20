@@ -18,7 +18,6 @@
             android:layout_alignParentBottom="true"
             android:background="@color/white2" />
 
-
         <androidx.cardview.widget.CardView
             android:id="@+id/centeredWhiteView"
             android:layout_width="320dp"
@@ -38,8 +37,8 @@
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:backgroundTint="@color/white"
-                    android:src="@drawable/baseline_arrow_back_ios_24"
-                    android:onClick="btnVoltar" />
+                    android:onClick="btnVoltar"
+                    android:src="@drawable/baseline_arrow_back_ios_24" />
 
                 <ImageView
                     android:layout_width="109dp"
@@ -115,8 +114,8 @@
                     android:id="@+id/myCheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Receber notícias e avisos por e-mail."
-                    android:checked="false" />
+                    android:checked="false"
+                    android:text="Receber notícias e avisos por e-mail." />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -135,11 +134,10 @@
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Confirmar"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
         </FrameLayout>
-
 
     </RelativeLayout>
 </RelativeLayout>

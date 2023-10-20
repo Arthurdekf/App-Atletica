@@ -18,7 +18,6 @@
             android:layout_alignParentBottom="true"
             android:background="@color/white2" />
 
-
         <androidx.cardview.widget.CardView
             android:id="@+id/centeredWhiteView"
             android:layout_width="320dp"
@@ -81,11 +80,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:onClick="registrar"
                     android:text="NÃO POSSUI CONTA?"
                     android:textColor="@color/blue"
                     android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:onClick="registrar" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -105,8 +104,8 @@
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
                 android:text="Login"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/linkForgot"
@@ -114,12 +113,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="70dp"
+                android:onClick="esqueceu"
                 android:text="ESQUECI MINHA SENHA"
                 android:textColor="#555555"
-                android:onClick="esqueceu"
                 android:textSize="20dp" />
         </FrameLayout>
-
 
     </RelativeLayout>
 </RelativeLayout>

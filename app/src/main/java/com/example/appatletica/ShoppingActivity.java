@@ -30,8 +30,8 @@ public class ShoppingActivity extends AppCompatActivity {
 
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Produto 1", "Descrição do Produto 1"));
-        productList.add(new Product("Produto 2", "Descrição do Produto 2"));
+        productList.add(new Product("Produto 1", "Descrição do Produto 1", "R$20.00"));
+        productList.add(new Product("Produto 2", "Descrição do Produto 2", "R$20.00"));
         return productList;
     }
 }

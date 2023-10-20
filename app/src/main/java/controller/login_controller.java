@@ -2,18 +2,17 @@ package controller;
 
 import com.example.appatletica.model.administrator;
 import com.example.appatletica.model.member;
-import com.example.appatletica.model.user;
+import com.example.appatletica.model.User;
 
 import java.util.List;
-import java.util.ArrayList;
 
 
-import userDAO.user_dao;
+import com.example.appatletica.dao.UserDAO;
 
 public class login_controller {
-    private final user_dao userDAO;
+    private final UserDAO userDAO;
 
-    public login_controller(user_dao userDAO) {
+    public login_controller(UserDAO userDAO) {
 
         this.userDAO = userDAO;
     }
@@ -26,15 +25,15 @@ public class login_controller {
     }
 
     public String getUserType(String email, String senha) {
-        List<user> userList = userDAO.getUsers();
+        List<User> userList = userDAO.getUsers();
 
-        for (user u : userList) {
+        for (User u : userList) {
             if (u instanceof member && u.getEmail().equals(email) && u.getSenha().equals(senha)) {
                 return "membro";
             }
         }
 
-        for (user u : userList) {
+        for (User u : userList) {
             if (u instanceof administrator && u.getEmail().equals(email) && u.getSenha().equals(senha)) {
                 return "administrador";
             }
