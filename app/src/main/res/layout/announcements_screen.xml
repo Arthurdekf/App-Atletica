@@ -63,7 +63,8 @@
                 android:layout_weight="1"
                 android:src="@drawable/baseline_local_mall_24"
                 android:layout_gravity="center"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp"
+                android:tint="@color/grey"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -71,8 +72,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/campaign"
                 android:layout_gravity="center"
-                android:layout_margin="8dp"
-                android:tint="@color/grey"/>
+                android:layout_margin="8dp" />
         </LinearLayout>
     </FrameLayout>
 

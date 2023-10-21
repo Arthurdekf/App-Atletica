@@ -30,6 +30,7 @@
             android:src="@drawable/arrow_back_ios_new" />
 
         <ImageView
+            android:id="@+id/settings"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="end"
@@ -59,7 +60,7 @@
                 android:layout_toEndOf="@id/profileImage">
 
                 <ImageView
-                    android:id="@+id/profileImage"
+                    android:id="@+id/profileImage1"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_alignParentStart="true"
@@ -75,7 +76,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/username"
+                        android:id="@+id/username1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -89,7 +90,7 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/content"
+                            android:id="@+id/content1"
                             android:layout_width="250dp"
                             android:layout_height="wrap_content"
                             android:text="Aqui é uma bio gerenerica que qualquer um vai poder preencher da forma que bem entender."
@@ -168,17 +169,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
-            android:background="#FFFFFF"
-            app:itemActiveIndicatorStyle="@color/material_on_background_disabled"
-            app:itemIconTint="@drawable/bottom_navigation_item_color"
-            app:itemTextColor="@drawable/bottom_navigation_item_color"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_navigation_menu2" />
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_home"
+                android:layout_gravity="center"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
     </FrameLayout>
 
 </LinearLayout>

@@ -135,6 +135,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <!-- Aqui você pode adicionar os itens da lista de configurações, cada um pode ser um TextView -->
+
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -199,22 +201,29 @@
         android:layout_height="match_parent">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Sair"
+            android:layout_gravity="center"
+            android:backgroundTint="#C11F0A"
             android:textSize="18sp" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
-            android:background="#FFFFFF"
-            app:itemActiveIndicatorStyle="@color/material_on_background_disabled"
-            app:itemIconTint="@drawable/bottom_navigation_item_color"
-            app:itemTextColor="@drawable/bottom_navigation_item_color"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_navigation_menu2" />
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_home"
+                android:layout_gravity="center"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
     </FrameLayout>
 
 

@@ -1,5 +1,8 @@
 package com.example.appatletica;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +30,7 @@ public class ShoppingActivity extends AppCompatActivity {
         productAdapter = new ProductAdapter(productList);
         recyclerView.setAdapter(productAdapter);
     }
+
 
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
