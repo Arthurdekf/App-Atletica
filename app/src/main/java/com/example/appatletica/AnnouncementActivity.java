@@ -12,7 +12,7 @@ import com.example.appatletica.model.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingActivity extends AppCompatActivity {
+public class AnnouncementActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ProductAdapter productAdapter;
@@ -20,7 +20,7 @@ public class ShoppingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.shopping_screen); // Defina o layout da sua tela de compras
+        setContentView(R.layout.announcements_screen); // Defina o layout da sua tela de compras
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -31,26 +31,25 @@ public class ShoppingActivity extends AppCompatActivity {
         recyclerView.setAdapter(productAdapter);
     }
 
-
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Produto 1", "Descrição do Produto 1", "R$20.00"));
-        productList.add(new Product("Produto 2", "Descrição do Produto 2", "R$20.00"));
+        productList.add(new Product("Titulo 1", "Descrição do anúncio 1", "R$20.00"));
+        productList.add(new Product("Titulo 2", "Descrição do anúncio 2", "R$20.00"));
         return productList;
     }
 
-    public void account2(View view){
-        Intent intent = new Intent(this, AccountActivity.class);
-        startActivity(intent);
-    }
-
-    public void home2(View view){
+    public void home3(View view){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
-    public void announcement2(View view){
-        Intent intent = new Intent(this, AnnouncementActivity.class);
+    public void shopping3(View view){
+        Intent intent = new Intent(this, ShoppingActivity.class);
+        startActivity(intent);
+    }
+
+    public void account3(View view){
+        Intent intent = new Intent(this, AccountActivity.class);
         startActivity(intent);
     }
 }

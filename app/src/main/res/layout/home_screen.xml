@@ -26,7 +26,7 @@
             android:layout_height="25dp"
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
-            android:onClick="account"
+            android:onClick="account1"
             android:src="@drawable/account_circle" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -86,6 +86,7 @@
             android:background="@color/white">
 
             <ImageView
+                android:id="@+id/btnHome"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -94,20 +95,24 @@
                 android:layout_margin="8dp" />
 
             <ImageView
+                android:id="@+id/btnShopping"
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_local_mall_24"
                 android:layout_gravity="center"
+                android:onClick="shopping1"
                 android:layout_margin="8dp"
                 android:tint="@color/grey"/>
 
             <ImageView
+                android:id="@+id/btnAnnouncement"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/campaign"
                 android:layout_gravity="center"
+                android:onClick="announcement1"
                 android:layout_margin="8dp"
                 android:tint="@color/grey"/>
         </LinearLayout>

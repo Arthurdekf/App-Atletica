@@ -26,7 +26,9 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ShoppingActivity" />
-
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AnnouncementActivity" />
+        <activity android:name=".SplashActivity" />
 
     </application>
 

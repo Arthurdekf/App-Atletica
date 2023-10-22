@@ -15,7 +15,6 @@ import com.example.appatletica.model.CardItem;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -45,8 +44,17 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    public void account(View view){
+    public void account1(View view){
         Intent intent = new Intent(this, AccountActivity.class);
+        startActivity(intent);
+    }
+
+    public void shopping1 (View view) {
+        Intent intent = new Intent(this, ShoppingActivity.class);
+        startActivity(intent);
+    }
+    public void announcement1 (View view) {
+        Intent intent = new Intent(this, AnnouncementActivity.class);
         startActivity(intent);
     }
 

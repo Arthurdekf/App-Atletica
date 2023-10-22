@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F1F1F1"
     android:orientation="vertical"
-    tools:context=".ShoppingActivity">
+    tools:context=".AnnouncementActivity">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -27,7 +27,7 @@
             android:layout_height="25dp"
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
-            android:onClick="account"
+            android:onClick="account3"
             android:src="@drawable/account_circle" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -49,24 +49,29 @@
             android:background="@color/white">
 
             <ImageView
+                android:id="@+id/btnHome"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_home"
                 android:layout_gravity="center"
+                android:onClick="home3"
                 android:layout_margin="8dp"
                 android:tint="@color/grey"/>
 
             <ImageView
+                android:id="@+id/btnShopping"
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_local_mall_24"
                 android:layout_gravity="center"
+                android:onClick="shopping3"
                 android:layout_margin="8dp"
                 android:tint="@color/grey"/>
 
             <ImageView
+                android:id="@+id/btnAnnouncement"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"

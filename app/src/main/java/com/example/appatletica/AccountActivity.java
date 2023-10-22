@@ -15,7 +15,16 @@ public class AccountActivity extends AppCompatActivity {
 
     }
 
+    public void btnSettings (View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
     public void btnVoltar (View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+    public void voltarMenu (View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }

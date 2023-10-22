@@ -38,13 +38,13 @@ public class LoginActivity extends AppCompatActivity {
                 String senha = senhaEditText.getText().toString();
                 String userType = loginController.getUserType(email, senha);
 
-               //if (userType != null) {
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-               //    intent.putExtra("userType", userType);
+               if (userType != null) {
+                    Intent intent = new Intent(LoginActivity.this, SplashActivity.class);
+                   intent.putExtra("userType", userType);
                     startActivity(intent);
-               // } else {
-               //    Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
-               //}
+                } else {
+                   Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
+               }
             }
         });
     }

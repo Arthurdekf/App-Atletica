@@ -30,12 +30,11 @@
             android:src="@drawable/arrow_back_ios_new" />
 
         <ImageView
-            android:id="@+id/settings"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
-            android:onClick="settings"
+            android:onClick="btnSettings"
             android:src="@drawable/baseline_settings" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -176,10 +175,12 @@
             android:orientation="horizontal"
             android:background="@color/white">
             <ImageView
+                android:id="@+id/btnHome"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_home"
+                android:onClick="voltarMenu"
                 android:layout_gravity="center"
                 android:layout_margin="8dp" />
         </LinearLayout>
