@@ -19,6 +19,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private login_controller loginController;
 
+    private Button btnLoginNoAcc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                }
             }
         });
+
     }
 
     public void registrar(View view){
@@ -56,5 +59,11 @@ public class LoginActivity extends AppCompatActivity {
     public void esqueceu(View view){
         Intent intent = new Intent(this, RecoverActivity.class);
         startActivity(intent);
+    }
+
+    public void btnLoginNoAcc(View view){
+        Intent intent = new Intent(this, SplashActivity.class);
+        startActivity(intent);
+        Toast.makeText(this,"Login realizado sem cadastro", Toast.LENGTH_SHORT).show();
     }
 }

@@ -63,7 +63,8 @@
                     android:id="@+id/nameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="NOME COMPLETO" />
+                    android:hint="NOME COMPLETO"
+                    android:textColor="@color/black2"/>
 
                 <Space
                     android:layout_width="match_parent"
@@ -73,18 +74,21 @@
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="E-MAIL" />
+                    android:hint="E-MAIL"
+                    android:textColor="@color/black2"/>
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp" />
+                    android:layout_height="20dp"
+                    android:textColor="@color/black2"/>
 
                 <EditText
                     android:id="@+id/senhaEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="SENHA"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColor="@color/black2"/>
 
                 <Space
                     android:layout_width="match_parent"
@@ -95,7 +99,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="CONFIRMAR SENHA"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColor="@color/black2" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -115,7 +120,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Receber notícias e avisos por e-mail." />
+                    android:text="Receber notícias e avisos por e-mail."
+                    android:textColor="@color/black2" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

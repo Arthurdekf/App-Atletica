@@ -20,13 +20,13 @@ public class ShoppingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.shopping_screen); // Defina o layout da sua tela de compras
+        setContentView(R.layout.shopping_screen);
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        List<Product> productList = generateSampleProductList(); // Método fictício para gerar dados de exemplo
+        List<Product> productList = generateSampleProductList();
         productAdapter = new ProductAdapter(productList);
         recyclerView.setAdapter(productAdapter);
     }

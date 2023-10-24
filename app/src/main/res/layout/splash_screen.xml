@@ -177,5 +177,6 @@
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:text="Continuar"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
 </LinearLayout>
