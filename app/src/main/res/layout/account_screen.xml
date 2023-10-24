@@ -41,7 +41,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp">
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,7 +118,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp">
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/white">
 
             <RelativeLayout
                 android:layout_width="wrap_content"

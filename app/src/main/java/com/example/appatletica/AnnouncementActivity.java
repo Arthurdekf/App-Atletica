@@ -20,21 +20,21 @@ public class AnnouncementActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.announcements_screen); // Defina o layout da sua tela de compras
+        setContentView(R.layout.announcements_screen);
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        List<Product> productList = generateSampleProductList(); // Método fictício para gerar dados de exemplo
+        List<Product> productList = generateSampleProductList();
         productAdapter = new ProductAdapter(productList);
         recyclerView.setAdapter(productAdapter);
     }
 
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Titulo 1", "Descrição do anúncio 1", "R$20.00"));
-        productList.add(new Product("Titulo 2", "Descrição do anúncio 2", "R$20.00"));
+        productList.add(new Product("Anúncio 1", "Descrição do anúncio 1", "VISUALIZAR"));
+        productList.add(new Product("Anúncio 2", "Descrição do anúncio 2", "VISUALIZAR"));
         return productList;
     }
 

@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView); // R.id.recyclerView deve corresponder ao ID no seu arquivo activity_home.xml
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<CardItem> itemList = createCardItemList();

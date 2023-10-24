@@ -23,7 +23,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.small_post, parent, false); // Substitua 'card_layout' pelo layout do seu cartão
+                .inflate(R.layout.small_post, parent, false);
         return new ViewHolder(view);
     }
 
