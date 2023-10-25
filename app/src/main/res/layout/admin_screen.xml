@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F1F1F1"
     android:orientation="vertical"
-    tools:context=".AccountActivity">
+    tools:context=".AdminActivity">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -65,12 +65,14 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginTop="5dp">
+
                             <EditText
                                 android:id="@+id/emailEditText1"
                                 android:layout_width="325dp"
                                 android:layout_height="wrap_content"
                                 android:hint="Email"
                                 android:maxLines="1" />
+
                             <ImageView
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
@@ -112,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:text="Engenharias Administrador"
+                        android:text="Launaerp Administrador"
                         android:textColor="@color/black2"
                         android:textSize="22sp" />
                     <LinearLayout
@@ -152,6 +154,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:onClick="btnVoltarAdm"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"

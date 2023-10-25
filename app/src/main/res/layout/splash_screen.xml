@@ -167,16 +167,29 @@
                 android:text="Não poderia faltar também um portal com cupons de descontos exclusivos e divulgação de festas e eventos universitários."
                 android:textColor="@color/black2"
                 android:textSize="18sp" />
+
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/btnContinuar"
-        android:layout_width="200dp"
+
+    <TextView
+        android:id="@+id/appInfoTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue"
-        android:layout_marginTop="50dp"
+        android:text="Aplicativo por Arthur Fedeli e João Victor Thomazini"
+        android:textSize="14sp"
         android:layout_gravity="center"
-        android:text="Continuar"
-        android:textSize="20sp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnContinuar" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:text="Continuar"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
 </LinearLayout>

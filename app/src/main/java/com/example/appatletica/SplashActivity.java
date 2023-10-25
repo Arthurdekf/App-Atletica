@@ -15,12 +15,37 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         btnContinuar = findViewById(R.id.btnContinuar);
+
+        String userType = getIntent().getStringExtra("userType");
+
+
+//        btnContinuar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
-                startActivity(intent);
+                String userType = getIntent().getStringExtra("userType");
+                if (userType != null) {
+                    if (userType.equals("membro")) {
+                        Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    } else if (userType.equals("administrador")) {
+                        Intent intent = new Intent(SplashActivity.this, AdminActivity.class);
+                        startActivity(intent);
+                    }
+                } else {
+                    Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                }
             }
         });
+
+
     }
 }

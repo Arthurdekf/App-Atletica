@@ -29,6 +29,8 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".AnnouncementActivity" />
         <activity android:name=".SplashActivity" />
+        <activity android:name=".AdminActivity" />
+
 
     </application>
 
