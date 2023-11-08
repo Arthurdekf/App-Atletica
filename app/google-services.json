@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118531194090",
+    "project_id": "app-atletica-0519",
+    "storage_bucket": "app-atletica-0519.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118531194090:android:d9d2d847ca9426517b2b93",
+        "android_client_info": {
+          "package_name": "com.example.appatletica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb68Nml4c0QXsrPyA_D7WdbuNl22NFVK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
