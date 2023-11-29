@@ -5,10 +5,9 @@ public final class member extends User {
     private String curso;
     boolean receberNoticias;
 
-    public member(String id, String email, String senha, String name, String curso, boolean receberNoticias) {
-        super(id, email, senha);
+    public member(String email, String senha, String name, String curso, boolean receberNoticias) {
+        super(email, email, senha, curso);
         this.name = name;
-        this.curso = curso;
         this.receberNoticias = receberNoticias;
     }
 
@@ -18,14 +17,6 @@ public final class member extends User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCurso() {
-        return curso;
-    }
-
-    public void setCurso(String curso) {
-        this.curso = curso;
     }
 
     public boolean isReceberNoticias() {

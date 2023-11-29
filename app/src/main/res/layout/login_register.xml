@@ -60,10 +60,10 @@
                     android:layout_height="20dp" />
 
                 <EditText
-                    android:id="@+id/nameEditText"
+                    android:id="@+id/nomeEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="NOME COMPLETO"
+                    android:hint="Nome completo"
                     android:textColor="@color/black2"/>
 
                 <Space
@@ -74,7 +74,7 @@
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="E-MAIL"
+                    android:hint="Email"
                     android:textColor="@color/black2"/>
 
                 <Space
@@ -86,7 +86,7 @@
                     android:id="@+id/senhaEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="SENHA"
+                    android:hint="Senha"
                     android:inputType="textPassword"
                     android:textColor="@color/black2"/>
 
@@ -98,7 +98,7 @@
                     android:id="@+id/senhaConfirmText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="CONFIRMAR SENHA"
+                    android:hint="Confirmar senha"
                     android:inputType="textPassword"
                     android:textColor="@color/black2" />
 
@@ -107,7 +107,7 @@
                     android:layout_height="20dp" />
 
                 <Spinner
-                    android:id="@+id/spinnerDropdown"
+                    android:id="@+id/spinnerCursos"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content" />
 
@@ -132,13 +132,14 @@
             android:elevation="100dp">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnConfirm"
                 android:layout_width="218dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="80dp"
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
+                android:onClick="cadastrarUsuario"
                 android:text="Confirmar"
                 android:textColor="@color/white"
                 android:textSize="25dp" />

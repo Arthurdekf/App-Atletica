@@ -11,8 +11,8 @@ public class userDAO_impl implements UserDAO {
 
     public userDAO_impl() {
         userList = new ArrayList<>();
-        userList.add(new member("1", "joao@gmail.com", "teste123", "João", "Engenharia", false));
-        userList.add(new administrator("1", "arthur@gmail.com", "admin123"));
+        userList.add(new member("joao@gmail.com", "teste123", "João", "Engenharia", false));
+        userList.add(new administrator("1", "arthur@gmail.com", "admin123", "Engenharia"));
     }
 
     @Override

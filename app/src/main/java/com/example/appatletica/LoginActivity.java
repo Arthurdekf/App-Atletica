@@ -12,13 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import controller.login_controller;
 import com.example.appatletica.dao.UserDAO;
 import com.example.appatletica.dao.userDAO_impl;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+
+import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText emailEditText;
     private EditText senhaEditText;
-    private Button btnLogin;
     private login_controller loginController;
-
     private Button btnLoginNoAcc;
 
     @Override
@@ -28,28 +32,33 @@ public class LoginActivity extends AppCompatActivity {
 
         emailEditText = findViewById(R.id.emailEditText);
         senhaEditText = findViewById(R.id.senhaEditText);
-        btnLogin = findViewById(R.id.btnLogin);
 
         UserDAO userDAO = new userDAO_impl();
         loginController = new login_controller(userDAO);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String email = emailEditText.getText().toString();
-                String senha = senhaEditText.getText().toString();
-                String userType = loginController.getUserType(email, senha);
+    }
 
-               if (userType != null) {
-                    Intent intent = new Intent(LoginActivity.this, SplashActivity.class);
-                   intent.putExtra("userType", userType);
-                    startActivity(intent);
-                } else {
-                   Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
-               }
-            }
+    public void efetuarLogin(View view){
+        String email = emailEditText.getText().toString().trim();
+        String senha = senhaEditText.getText().toString().trim();
+        if (email.isEmpty() || senha.isEmpty()) {
+            Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener(this, new OnCompleteListener() {
+                    @Override
+                    public void onComplete(@NonNull Task task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "Login bem-sucedido", Toast.LENGTH_SHORT).show();
+                            Intent it = new Intent(LoginActivity.this, SplashActivity.class);
+                            startActivity(it);
+                        } else {
+                            Toast.makeText(LoginActivity.this, "Falha no login: " +
+                                    task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
         });
-
     }
 
     public void registrar(View view){

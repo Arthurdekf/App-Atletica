@@ -3,8 +3,8 @@ package com.example.appatletica.model;
 public final class administrator extends User {
     private String nomeAtletica;
 
-    public administrator(String id, String email, String senha) {
-        super(id, email, senha);
+    public administrator(String id, String email, String senha, String curso) {
+        super(id, email, senha, curso);
     }
 
     public String getNomeAtletica() {

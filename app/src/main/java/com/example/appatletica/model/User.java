@@ -4,11 +4,14 @@ public abstract class User {
     private String id;
     private String email;
     private String senha;
+    private String curso;
 
-    public User(String id,String email, String senha) {
+
+    public User(String id, String email, String senha, String curso) {
         this.id = id;
         this.email = email;
         this.senha = senha;
+        this.curso = curso;
     }
 
     public String getId() {

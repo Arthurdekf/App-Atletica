@@ -18,7 +18,6 @@ public class SplashActivity extends AppCompatActivity {
 
         String userType = getIntent().getStringExtra("userType");
 
-
 //        btnContinuar.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

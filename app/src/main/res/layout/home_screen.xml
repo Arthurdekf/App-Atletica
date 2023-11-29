@@ -117,17 +117,6 @@
                 android:tint="@color/grey"/>
         </LinearLayout>
 
-<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            android:id="@+id/bottomNavigationView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="70dp"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            android:background="#FFFFFF"-->
-<!--            app:itemActiveIndicatorStyle="@color/material_on_background_disabled"-->
-<!--            app:itemIconTint="@drawable/bottom_navigation_item_color"-->
-<!--            app:itemTextColor="@drawable/bottom_navigation_item_color"-->
-<!--            app:labelVisibilityMode="unlabeled"-->
-<!--            app:menu="@menu/bottom_navigation_menu" />-->
     </FrameLayout>
 
 </LinearLayout>

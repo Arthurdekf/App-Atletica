@@ -102,6 +102,7 @@
                 android:layout_marginBottom="185dp"
                 android:backgroundTint="@color/blue"
                 android:elevation="100dp"
+                android:onClick="esqueceuSenha"
                 android:text="Enviar"
                 android:textColor="@color/white"
                 android:textSize="25dp" />
