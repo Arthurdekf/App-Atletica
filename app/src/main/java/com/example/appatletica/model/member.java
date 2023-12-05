@@ -26,4 +26,12 @@ public final class member extends User {
     public void setReceberNoticias(boolean receberNoticias) {
         this.receberNoticias = receberNoticias;
     }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
 }

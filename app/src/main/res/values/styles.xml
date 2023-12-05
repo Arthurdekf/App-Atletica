@@ -7,4 +7,12 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">24sp</item>
     </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/grey</item>
+        <item name="colorAccent">#0077E6</item>
+        <item name="android:textColorPrimary">#B5B0B0</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

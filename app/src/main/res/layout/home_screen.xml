@@ -47,11 +47,11 @@
             android:layout_height="wrap_content"
             android:text="GERAL" />
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabNoticias"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="NOTÍCIAS" />
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabNoticias"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NOTÍCIAS" />-->
     </com.google.android.material.tabs.TabLayout>
 
     <FrameLayout
@@ -75,6 +75,7 @@
             app:elevation="6dp"
             app:fabSize="normal"
             app:pressedTranslationZ="12dp"
+            android:onClick="escreverPostagem"
             app:srcCompat="@drawable/baseline_create_24"
             app:tint="@color/blue" />
 
