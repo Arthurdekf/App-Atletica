@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content">
 
                 <View
-                    android:id="@+id/whiteSquare"
+                    android:id="@+id/backgroundImage"
                     android:layout_width="match_parent"
                     android:layout_height="170dp"
                     android:background="@color/white2" />

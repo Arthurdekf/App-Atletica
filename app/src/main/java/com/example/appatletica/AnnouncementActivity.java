@@ -33,8 +33,8 @@ public class AnnouncementActivity extends AppCompatActivity {
 
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Anúncio 1", "Descrição do anúncio 1", "VISUALIZAR"));
-        productList.add(new Product("Anúncio 2", "Descrição do anúncio 2", "VISUALIZAR"));
+        productList.add(new Product("Festa da Bata", "09/12/23 - Local: Estação mangueira", "R$55")); //, R.drawable.festa
+        productList.add(new Product("Cupom de desconto", "Oak Berry", "5% OFF")); //, R.drawable.oakberry
         return productList;
     }
 

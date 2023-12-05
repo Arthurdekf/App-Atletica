@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Atléticas Administrador" />
+            android:text="Administrar Atléticas" />
     </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
@@ -68,7 +68,7 @@
 
                             <EditText
                                 android:id="@+id/emailEditText1"
-                                android:layout_width="325dp"
+                                android:layout_width="280dp"
                                 android:layout_height="wrap_content"
                                 android:hint="Email"
                                 android:maxLines="1" />
@@ -76,14 +76,17 @@
                             <ImageView
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
+                                android:layout_marginLeft="15dp"
                                 android:src="@drawable/baseline_edit_24" />
                         </LinearLayout>
                         <Button
+                            android:id="@+id/btnSalvar1"
                             android:layout_width="110dp"
                             android:layout_height="45dp"
                             android:backgroundTint="@color/blue"
                             android:layout_gravity="center"
                             android:text="Salvar"
+                            android:onClick="salvar1"
                             android:textSize="20sp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -122,23 +125,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginTop="5dp">
+
                         <EditText
-                            android:id="@+id/emailEditText"
-                            android:layout_width="325dp"
+                            android:id="@+id/emailEditText2"
+                            android:layout_width="280dp"
                             android:layout_height="wrap_content"
                             android:hint="Email"
                             android:maxLines="1" />
+
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
                             android:src="@drawable/baseline_edit_24" />
                     </LinearLayout>
                     <Button
+                        android:id="@+id/btnSalvar2"
                         android:layout_width="110dp"
                         android:layout_height="45dp"
                         android:backgroundTint="@color/blue"
                         android:layout_gravity="center"
                         android:text="Salvar"
+                        android:onClick="salvar2"
                         android:textSize="20sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

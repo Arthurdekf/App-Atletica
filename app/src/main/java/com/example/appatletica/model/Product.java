@@ -4,11 +4,13 @@ public class Product {
     private String name;
     private String description;
     private String price;
+    //private int imageResId;
 
-    public Product(String name, String description, String price) {
+    public Product(String name, String description, String price) { //, int imageResId
         this.name = name;
         this.description = description;
         this.price = price;
+        //this.imageResId = imageResId;
     }
 
     public String getName() {
@@ -34,4 +36,14 @@ public class Product {
     public void setPrice(String price) {
         this.price = price;
     }
+
+//    public int getImageResId() {
+//        return imageResId;
+//    }
+//
+//    public void setImageResId(int imageResId) {
+//        this.imageResId = imageResId;
+//    }
+
+
 }

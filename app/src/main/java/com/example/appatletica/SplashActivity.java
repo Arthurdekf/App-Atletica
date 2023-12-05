@@ -7,6 +7,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class SplashActivity extends AppCompatActivity {
     private Button btnContinuar;
     @Override
@@ -18,33 +21,19 @@ public class SplashActivity extends AppCompatActivity {
 
         String userType = getIntent().getStringExtra("userType");
 
-//        btnContinuar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String userType = getIntent().getStringExtra("userType");
-                if (userType != null) {
-                    if (userType.equals("membro")) {
-                        Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
-                        startActivity(intent);
-                    } else if (userType.equals("administrador")) {
-                        Intent intent = new Intent(SplashActivity.this, AdminActivity.class);
-                        startActivity(intent);
-                    }
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                if (user != null && user.getEmail().equals("arthur@gmail.com")) {
+                    Intent intent = new Intent(SplashActivity.this, AdminActivity.class);
+                    startActivity(intent);
                 } else {
-                    Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                        Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
             }
         });
-
-
     }
 }

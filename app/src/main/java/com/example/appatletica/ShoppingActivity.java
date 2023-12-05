@@ -34,8 +34,8 @@ public class ShoppingActivity extends AppCompatActivity {
 
     private List<Product> generateSampleProductList() {
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Produto 1", "Descrição do Produto 1", "R$20.00"));
-        productList.add(new Product("Produto 2", "Descrição do Produto 2", "R$20.00"));
+        productList.add(new Product("Kit Inter Unaerp", "Camiseta + Bolsa do Inter Unaerp 2023", "R$60")); //, R.drawable.inter_unaerp
+        productList.add(new Product("Uniforme 1 Engenharias", "Camiseta e short masculino", "R$74.99")); //, R.drawable.kit
         return productList;
     }
 
